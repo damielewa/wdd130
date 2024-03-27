@@ -1,0 +1,106 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #FF5722; /* Orange */
+  --text-color: #212121; /* Dark Gray */
+}
+
+/* General styles */
+body {
+  font-family: 'Montserrat', sans-serif; /* Changed font */
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5; /* Light Gray */
+  color: var(--text-color);
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 50%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+}
+
+article {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto; 
+  text-align: justify; 
+}
+
+article img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
+
+.sociallinks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+.sociallinks img {
+  width: 30px;
+  margin: 0 5px;
+}
