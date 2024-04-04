@@ -1,19 +1,20 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Define CSS variables */
 :root {
-  --primary-color: #4CAF50; /* Green */
-  --secondary-color: #FF5722; /* Orange */
-  --text-color: #212121; /* Dark Gray */
+  --primary-color: #007bff;
+  --secondary-color: #ffc107;
+  --text-color: #333;
 }
 
 /* General styles */
 body {
-  font-family: 'Montserrat', sans-serif; /* Changed font */
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5F5F5; /* Light Gray */
+  /* Keeping the background color unchanged */
+  background-color: #f8f9fa;
   color: var(--text-color);
 }
 
@@ -28,52 +29,60 @@ header {
 
 header img {
   width: 150px;
+  height: auto;
+}
+
+nav {
+  display: flex;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 0 5px;
 }
 
-/* Main styles */
-main {
-  max-width: 800px;
-  margin: 20px auto;
+/* White Water Rafting Section */
+.white-water-rafting {
+  text-align: center;
 }
 
-.hero {
-  position: relative;
-}
-
-.hero img {
-  width: 50%;
+.white-water-rafting img {
+  width: 100%; /* Make image wider */
   height: auto;
 }
 
-.hero h1 {
+.white-water-rafting-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 3em;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
 }
 
-article {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+/* Align description center below the image */
+.white-water-rafting-description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Article Section */
+.article-box {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   width: 50%;
-  margin: 0 auto; 
-  text-align: justify; 
+  margin: 20px auto;
+  text-align: justify;
 }
 
-article img {
+.article-box img {
   float: right;
   margin-left: 20px;
   margin-bottom: 20px;
